@@ -24,6 +24,7 @@ solidity_auto() {
     sudo echo ".gitignore" >> .gitignore
     sudo echo ".env" >> .gitignore
     sudo echo "node_modules" >> .gitignore
-    sudo echo "solidityDefaults.sh" >> .gitignore
+
+    sudo rm solidityDefaults.sh solidityDefault.png README.md 
 }
 solidity_auto
