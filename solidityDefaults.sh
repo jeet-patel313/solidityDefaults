@@ -2,6 +2,9 @@
 
 solidity_auto() {
 
+    # remove initials
+    sudo rm README.md solidityDefault.png     
+
     # initialize project
     sudo npm init -y
 
@@ -25,6 +28,7 @@ solidity_auto() {
     sudo echo ".env" >> .gitignore
     sudo echo "node_modules" >> .gitignore
 
-    sudo rm solidityDefaults.sh solidityDefault.png README.md 
+    sudo mv `\ls -1 . | grep -v solidityDefaults.sh` ../
+    sudo rm -r ../solidityDefaults 
 }
 solidity_auto
