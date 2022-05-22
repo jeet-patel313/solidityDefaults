@@ -21,12 +21,12 @@ solidity_auto() {
     #  create folders and create scripts
     sudo mkdir contracts/ test/
     sudo mkdir -p scripts/deploy.js
-    sudo touch .env
+    sudo touch ../.env
 
     #  create a .gitignore and add files
-    sudo echo ".gitignore" >> .gitignore
-    sudo echo ".env" >> .gitignore
-    sudo echo "node_modules" >> .gitignore
+    sudo echo ".gitignore" >> ../.gitignore
+    sudo echo ".env" >> ../.gitignore
+    sudo echo "node_modules" >> ../.gitignore
 
     sudo mv `\ls -1 . | grep -v solidityDefaults.sh` ../
     sudo rm -r ../solidityDefaults 
