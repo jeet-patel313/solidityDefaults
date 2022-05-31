@@ -19,8 +19,8 @@ solidity_auto() {
     sed -i '1i require("@nomiclabs/hardhat-waffle");' hardhat.config.js
     
     #  create folders and create scripts
-    sudo mkdir contracts/ test/
-    sudo mkdir -p scripts/deploy.js
+    sudo mkdir contracts/ test/ scripts/
+    sudo touch scripts/deploy.js
     sudo touch ../.env
 
     #  create a .gitignore and add files
